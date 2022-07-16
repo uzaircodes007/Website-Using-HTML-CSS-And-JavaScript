@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+VALIDATION
+</title>
+</head>
+<body>
+<h1> <b> <u> PLEASE ENTER CORRECT DETAILS </b> </u> </h1>
+<form name="myform">
+First Name: <input type="text" name="first"/> <br> <br> <br>
+Last Name: <input type="text" name="last"/> <br> <br> <br> 
+Mobile Number:<input type="text" name="mobile"/> <br> <br> <br>
+Email Id : <input type="text" name="mail"/> <br> <br> <br>
+<b> <u> PLEASE SELECT YOUR TIME SLOT TO VISIT US </b> </u> <BR>
+Select Your Time Slot <select name="Time Slot"> <br> <br>
+<option> 11.00 - 13.00 </option>
+<option> 13.00 - 15.00 </option>
+<opion>  15.00 - 17.00 </option>  <br> <br>
+Submit: <input type="submit" value="submit" onclick="validate()"/>
+</form>
+<script type="text/javascript">
+function validate()
+{
+if(document.myform.first.value=="" && document.myform.last.value=="")
+alert("Please Enter Your Name")
+else if(document.myform.first.value=="")
+alert("Please Enter Your First Name")
+else if(document.myform.last.value=="")
+alert("Please Enter Your Last Name")
+else if(document.myform.mobile.value.length<=9)
+alert("incorrect Mobile Number")
+}
+</script>
+</body>
+</html>
